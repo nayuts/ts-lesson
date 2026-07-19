@@ -22,3 +22,12 @@ function fetchUser(): Promise<string> {
     setTimeout(() => resolve("山田太郎"), 2000);
   });
 }
+
+async function displayDashboard() {
+  const [todos, user] = await Promise.all([fetchTodos(), fetchUser()]);
+
+  console.log(`${user}さんのTodo:${todos.join(", ")}`);
+}
+displayDashboard();
+
+// console.log(`${user}さんのTodo:${todos.join(", ")}`);
