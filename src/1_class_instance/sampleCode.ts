@@ -42,8 +42,11 @@ class Cat {
     console.log(`${this.name} says: Nyaa!`);
   }
 }
+
 const myCat = new Cat("Noa", "Black");
-
-console.log(`猫の ${myCat.name} の色は ${myCat.color} です。`);
-
+console.log(`名前は ${myCat.name} です。`);
+console.log(`年齢は ${myCat.color} です。`);
 myCat.meow();
+
+const myCat2 = new Cat("Mugi", "Brown");
+console.log(`僕は ${myCat2.name} ！色は ${myCat2.color} だよ！かわいいね`);
