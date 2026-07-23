@@ -48,4 +48,4 @@ myAccount.deposit(500); // 500円預金
 myAccount.withdraw(200); // 200円引き出し
 myAccount.withdraw(5000); // ❌ わざと残高より多く引き出そうとしてみる
 
-myAccount.balance = 10000000;
+// myAccount.balance = 10000000;

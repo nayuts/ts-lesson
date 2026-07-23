@@ -32,7 +32,7 @@ class BaseCharacter implements ICharacter {
   }
 }
 
-// クラス作成　オーバーライド
+// クラス作成(オーバーライド)
 class Warrior extends BaseCharacter {
   attack(): void {
     console.log(`${this.name}の剣攻撃！`);
