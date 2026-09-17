@@ -22,13 +22,20 @@ class BaseCharacter implements ICharacter {
 
   // ダメージ窓口
   takeDamage(damage: number): void {
+    // if (damage >= this.hp) {
+    //   this.hp = 0;
+    //   console.log(`${this.name}に${damage}のダメージ！HPは${this.hp}になった！`);
+    // } else {
+    //   this.hp -= damage;
+    //   console.log(`${this.name}に${damage}のダメージ！HPは${this.hp}になった！`);
+    // }
+
     if (damage >= this.hp) {
       this.hp = 0;
-      console.log(`${this.name}に${damage}のダメージ！HPは${this.hp}になった！`);
     } else {
       this.hp -= damage;
-      console.log(`${this.name}に${damage}のダメージ！HPは${this.hp}になった！`);
     }
+    console.log(`${this.name}に${damage}のダメージ！HPは${this.hp}になった！`);
   }
 }
 
